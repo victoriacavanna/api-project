@@ -14,13 +14,13 @@ app.use('/api', userRoutes);
 
 //routes 
 app.get('/', (req, res) => {
-    res.send("Welcome to my api");
+    res.send("Inicio");
 });
 
 //mongodb connection
 mongoose.connect(process.env.MONGODB_URI)
-.then(() => console.log("Database connection established"))
+.then(() => console.log("Conexión con base de datos establecida"))
 .catch((error) => console.error(error));
 
 
-app.listen(port, () => console.log('listening on port', port));
+app.listen(port, () => console.log('Puerto:', port));
