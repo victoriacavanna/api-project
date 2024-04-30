@@ -1,7 +1,4 @@
-<h1 align='center'>
-   API Rest con Express y MongoDB
-</h1>
-
+<h1 align='center' style="color: #3C873A;">API REST Nodejs <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>, MongoDB <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/>y Express <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></h1>
 
 
 <h3 align='center'>
@@ -21,8 +18,15 @@
 ## Uso
 
 - La API proporciona endpoints para la gestión de usuarios, incluyendo operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
-- Puedes realizar peticiones HTTP usando herramientas como Postman o cURL para probar los endpoints.
+- Puedes realizar peticiones HTTP usando herramientas como Postman para probar los endpoints.
 
+### Variables de entorno
+
+Para ejecutar este proyecto, necesitarás agregar la siguiente variables de entorno a tu archivo .env:
+
+`MONGODB_URI = 'mongodb+srv://vcavanna04:vcavannadb@cluster0.liy3qmt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'`
+
+<hr>
 
 #### Alumna:  Victoria Cavanna
 #### Legajo: 59265
