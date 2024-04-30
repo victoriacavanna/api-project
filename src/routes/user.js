@@ -2,12 +2,14 @@ import express from 'express';
 import User from '../models/user.js';
 const router = express.Router();
 
+//GET listar todos los usuarios
 router.get('/users', (req, res) => {
     User.find()
         .then((data) => res.json(data))
         .catch((err) => res.status(400).json({ message: err.message }));
 });
 
+//GET obtener usuario por id
 router.get('/users/:id', (req, res) => {
     const id = req.params.id;
     User.findById(id)
@@ -15,6 +17,7 @@ router.get('/users/:id', (req, res) => {
         .catch((err) => res.status(400).json({ message: err.message }));
 });
 
+//POST crear usuario
 router.post('/create', (req, res) => {
     const { name, age, email } = req.body;
     const newUser = new User({ name, age, email });
@@ -24,6 +27,7 @@ router.post('/create', (req, res) => {
         .catch((err) => res.status(400).json({ message: err.message }));
 });
 
+//PUT actualizar usuario
 router.put('/update/:id', (req, res) => {
     const id = req.params.id;
     const { name, age, email } = req.body;
@@ -45,6 +49,7 @@ router.put('/update/:id', (req, res) => {
 
 })
 
+//DELETE eliminar usuario por id
 router.delete('/delete/:id', (req, res) => {
     const id = req.params.id;
 
